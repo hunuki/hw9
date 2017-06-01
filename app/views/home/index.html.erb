@@ -1,0 +1,134 @@
+<% doc = Nokogiri::HTML(open("https://www.korea.ac.kr/user/restaurantMenuAllList.do?siteId=university&id=university_050402000000")) %>
+
+<table>
+<tr>
+  <th> </th>
+  <th>월</th>
+  <th>화</th>
+  <th>수</th>
+  <th>목</th>
+  <th>금</th>
+  <th>토</th>
+</tr>
+<tr>
+  <td>
+    조식 A
+  </td>
+  <td>
+    <% menu11 = doc.css(".ku_restaurant//ul//li:nth-child(1)//ol:nth-child(#{3})//li//p").inner_text.split("-")[1] %>
+    <%= menu11 %>
+  </td>
+  <td>
+    <% menu12 = doc.css(".ku_restaurant//ul//li:nth-child(1)//ol:nth-child(#{5})//li//p").inner_text.split("-")[1] %>
+    <%= menu12 %>
+  </td>
+  <td>
+    <% menu12 = doc.css(".ku_restaurant//ul//li:nth-child(1)//ol:nth-child(#{7})//li//p").inner_text.split("-")[1] %>
+    <%= menu12 %>
+  </td>
+  <td>
+    <% menu12 = doc.css(".ku_restaurant//ul//li:nth-child(1)//ol:nth-child(#{9})//li//p").inner_text.split("-")[1] %>
+    <%= menu12 %>
+  </td>
+  <td>
+    <% menu12 = doc.css(".ku_restaurant//ul//li:nth-child(1)//ol:nth-child(#{11})//li//p").inner_text.split("-")[1] %>
+    <%= menu12 %>
+  </td>
+  <td>
+    <% menu12 = doc.css(".ku_restaurant//ul//li:nth-child(1)//ol:nth-child(#{13})//li//p").inner_text.split("-")[1] %>
+    <%= menu12 %>
+  </td>
+  <td>
+    <% menu12 = doc.css(".ku_restaurant//ul//li:nth-child(1)//ol:nth-child(#{15})//li//p").inner_text.split("-")[1] %>
+    <%= menu12 %>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    조식 B
+  </td>
+  <td>
+    <% menu21 = doc.css(".ku_restaurant//ul//li:nth-child(1)//ol:nth-child(#{3})//li//div:nth-child(#{4})").inner_text.split("-")[1] %>
+    <%= menu21 %>
+  </td>
+  <td>
+    <% menu22 = doc.css(".ku_restaurant//ul//li:nth-child(1)//ol:nth-child(#{5})//li//div:nth-child(#{4})").inner_text.split("-")[1] %>
+    <%= menu22 %>
+  </td>
+  <td>
+    <% menu22 = doc.css(".ku_restaurant//ul//li:nth-child(1)//ol:nth-child(#{7})//li//div:nth-child(#{4})").inner_text.split("-")[1] %>
+    <%= menu22 %>
+  </td>
+  <td>
+    <% menu22 = doc.css(".ku_restaurant//ul//li:nth-child(1)//ol:nth-child(#{9})//li//div:nth-child(#{4})").inner_text.split("-")[1] %>
+    <%= menu22 %>
+  </td>
+  <td>
+  </td>
+  <td>
+
+  </td>
+</tr>
+
+<tr>
+  <td>
+    중식
+  </td>
+  <td>
+    <% menu31 = doc.css(".ku_restaurant//ul//li:nth-child(1)//ol:nth-child(#{3})//li//div:nth-child(#{5})").inner_text.split("-")[1] %>
+    <%= menu31 %>
+  </td>
+  <td>
+    <% menu32 = doc.css(".ku_restaurant//ul//li:nth-child(1)//ol:nth-child(#{5})//li//div:nth-child(#{5})").inner_text.split("-")[1] %>
+    <%= menu32 %>
+  </td>
+  <td>
+    <% menu32 = doc.css(".ku_restaurant//ul//li:nth-child(1)//ol:nth-child(#{7})//li//div:nth-child(#{5})").inner_text.split("-")[1] %>
+    <%= menu32 %>
+  </td>
+  <td>
+    <% menu32 = doc.css(".ku_restaurant//ul//li:nth-child(1)//ol:nth-child(#{9})//li//div:nth-child(#{5})").inner_text.split("-")[1] %>
+    <%= menu32 %>
+  </td>
+  <td>
+    <% menu22 = doc.css(".ku_restaurant//ul//li:nth-child(1)//ol:nth-child(#{11})//li//div:nth-child(#{4})").inner_text.split("-")[1] %>
+    <%= menu22 %>
+  </td>
+  <td>
+    <% menu22 = doc.css(".ku_restaurant//ul//li:nth-child(1)//ol:nth-child(#{13})//li//div:nth-child(#{4})").inner_text.split("-")[1] %>
+    <%= menu22 %>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr>
+  <td>
+    석식
+  </td>
+  <td>
+    <% menu41 = doc.css(".ku_restaurant//ul//li:nth-child(1)//ol:nth-child(#{3})//li//div:nth-child(#{6})").inner_text.split("-")[1] %>
+    <%= menu41 %>
+  </td>
+  <td>
+    <% menu42 = doc.css(".ku_restaurant//ul//li:nth-child(1)//ol:nth-child(#{5})//li//div:nth-child(#{6})").inner_text.split("-")[1] %>
+    <%= menu42 %>
+  </td>
+  <td>
+    <% menu42 = doc.css(".ku_restaurant//ul//li:nth-child(1)//ol:nth-child(#{7})//li//div:nth-child(#{6})").inner_text.split("-")[1] %>
+    <%= menu42 %>
+  </td>
+  <td>
+    <% menu42 = doc.css(".ku_restaurant//ul//li:nth-child(1)//ol:nth-child(#{9})//li//div:nth-child(#{6})").inner_text.split("-")[1] %>
+    <%= menu42 %>
+  </td>
+  <td>
+    <% menu32 = doc.css(".ku_restaurant//ul//li:nth-child(1)//ol:nth-child(#{11})//li//div:nth-child(#{5})").inner_text.split("-")[1] %>
+    <%= menu32 %>
+  </td>
+  <td>
+    <% menu42 = doc.css(".ku_restaurant//ul//li:nth-child(1)//ol:nth-child(#{13})//li//div:nth-child(#{5})").inner_text.split("-")[1] %>
+    <%= menu42 %>
+  </td>
+</tr>
+</table>
